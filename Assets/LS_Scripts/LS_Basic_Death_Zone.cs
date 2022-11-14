@@ -29,7 +29,7 @@ public class LS_Basic_Death_Zone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player Bike")
         {
             //this doesn't work with CC as it would need to happen in
             //other.gameObject.transform.position = respawn.transform.position;
