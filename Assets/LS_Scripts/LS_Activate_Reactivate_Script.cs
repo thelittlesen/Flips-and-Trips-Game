@@ -8,7 +8,7 @@ public class LS_Activate_Reactivate_Script : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        StartCoroutine(dis);
+        StartCoroutine(dis());
     }
     IEnumerator dis()
     {
@@ -18,7 +18,7 @@ public class LS_Activate_Reactivate_Script : MonoBehaviour
  
     if (my platform I am using is currently inactive)
     {
-    StartCoroutine(Appear);
+    StartCoroutine(Appear());
 }
 IEnumerator Appear()
 {
