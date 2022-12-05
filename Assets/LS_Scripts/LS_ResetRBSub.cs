@@ -14,13 +14,32 @@ public class LS_ResetRBSub : MonoBehaviour
         thisRigidBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
+    public void Update()
+    {
+        if (Input.GetKey("r"))
+        {
+            ResteMe();
+
+        }
+    }
+
     public void ResteMe()
     {
-        thisRigidBody.velocity = new Vector2(0,0);
+        thisRigidBody.velocity = new Vector2(0, 0);
         thisRigidBody.angularVelocity = 0f;
         transform.rotation = Quaternion.identity;
         transform.position = relativeStartPosition;
     }
 
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Checkpoint")
+        {
+            relativeStartPosition = transform.position;
+        }
+
+    }
 
 }

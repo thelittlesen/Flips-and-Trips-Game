@@ -10,12 +10,16 @@ public class LS_KillPlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Player.transform.position = respawnPoint.transform.position;
-        
-        for(int i = 0; i<Player.childCount;i++)
+        if (collision.gameObject.tag == "Player")
         {
-            Transform subObject = Player.GetChild(i);
-            subObject.GetComponent<LS_ResetRBSub>().ResteMe();
+            Player.transform.position = respawnPoint.transform.position;
+
+            for (int i = 0; i < Player.childCount; i++)
+            {
+                Transform subObject = Player.GetChild(i);
+                subObject.GetComponent<LS_ResetRBSub>().ResteMe();
+            }
         }
     }
+        
 }
