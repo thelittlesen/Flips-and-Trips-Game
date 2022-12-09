@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene1 : MonoBehaviour
+public class LS_LevelLoader : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class LoadScene1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LevelOneLoad()
