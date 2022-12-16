@@ -7,7 +7,10 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/LS_Scenes/Start Screen UI.unity
+    guid: 9ea0fa2135fcff244bc1fcec28f5d94b
   - enabled: 1
     path: Assets/LS_Scenes/Level01Lives&ObstacleTrack.unity
     guid: 197c7a6ee33c1b14c81bbad1b41c3800
@@ -17,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LS_Scenes/Level03.unity
     guid: 3e6d10b25a7b12a4bb7c69ce30b923a7
-  - enabled: 1
-    path: Assets/LS_Scenes/Start Screen UI.unity
-    guid: 9ea0fa2135fcff244bc1fcec28f5d94b
   m_configObjects: {}
